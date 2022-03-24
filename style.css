@@ -173,12 +173,12 @@ body {
 .page-header__bottom {
 	min-height: 335px;
 	padding-top: 168px;
-	background: #EB5757 url("/img/header-bkg.jpg") no-repeat center center;
+	background: #EB5757 url("img/header-bkg.jpg") no-repeat center center;
 	background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
 	.page-header__bottom {
-		background-image: url("/img/header-bkg@2x.jpg");
+		background-image: url("img/header-bkg@2x.jpg");
 	}
 }
 .page-header__bottom--remove-bkg {
@@ -385,7 +385,7 @@ body {
 	display: block;
 	width: 18px;
 	height: 16px;
-	background: url("/svg/clip.svg") no-repeat center center;
+	background: url("svg/clip.svg") no-repeat center center;
 }
 .form__lable {
 	display: block;
