@@ -13,7 +13,7 @@
 
 <body class="page__body">
 
-	<header class="page-header">
+	<header id="page-header" class="page-header">
 		<div class="page-header__wrapper">
 			<div class="page-header__top">
 				<a class="page-header__logo" href="#">
@@ -41,14 +41,15 @@
 			</div>
 
 			<div class="page-header__middle">
-				<h1 class="page-header__title">Ремонт и дизайн<br> в Москве и Московской области</h1>
+				<h1 id="title" class="page-header__title">Ремонт и дизайн<br> в Москве и Московской области</h1>
+				<h1 id="title-remove" class="page-header__title page-header__title-white page-header__title--hidden">Услуги по ремонту<br> в Москве и Московской области</h1>
 				<button class="page-header__button button" type="button">Оставить заявку</button>
 			</div>
 
-			<div class="page-header__bottom">
+			<div id="page-header-bottom" class="page-header__bottom">
 				<ul class="service-list">
 					<li class="service-list__item">
-						<a class="service-list__link service-list__link--repair" href="#">Услуги по ремонту
+						<a id="repair" onmouseover="changeItem()" onmouseout="rechangeItem()" class="service-list__link service-list__link--repair" href="#">Услуги по ремонту
 							<div class="open-block">
 								<p class="open-block__link">Услуги по ремонту</p>
 								<p class="open-block__text">С другой стороны реализация намеченных плановых заданий требуют от нас анализа.</p>
@@ -160,5 +161,22 @@
 			<p class="page-footer__made">Сделано в <span class="bold-text">Palladiumlab</span></p>
 		</div>
 	</footer>
+
+	<script>
+		function changeItem() {
+			document.getElementById("page-header").classList.add("page-header--bkg");
+			document.getElementById("page-header-bottom").classList.add("page-header__bottom--remove-bkg");
+			// document.getElementById("").classList.add("");
+			document.getElementById("title").classList.add("page-header__title--hidden");
+			document.getElementById("title-remove").classList.remove("page-header__title--hidden");
+			}
+			function rechangeItem() {
+			document.getElementById("page-header").classList.remove("page-header--bkg");
+			document.getElementById("page-header-bottom").classList.remove("page-header__bottom--remove-bkg");
+			// document.getElementById("").classList.remove("");
+			document.getElementById("title").classList.remove("page-header__title--hidden");
+			document.getElementById("title-remove").classList.add("page-header__title--hidden");
+			}
+	</script>
 </body>
 </html>

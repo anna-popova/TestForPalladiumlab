@@ -54,6 +54,10 @@ body {
 	position: relative;
 	margin-bottom: 133px;
 }
+.page-header--bkg {
+	background: url("img/repair-bkg.jpg") no-repeat center center;
+	background-size: cover;
+}
 .page-header__wrapper {
 }
 .page-header__top {
@@ -142,6 +146,12 @@ body {
 	font-size: 62px;
 	line-height: 66px;
 }
+.page-header__title--hidden {
+	display: none;
+}
+.page-header__title-white {
+	color: #fff;
+}
 .page-header__button {
 }
 .button {
@@ -180,6 +190,10 @@ body {
 		background-image: url("/img/header-bkg@2x.jpg");
 	}
 }
+.page-header__bottom--remove-bkg {
+	background: none;
+}
+.page-header__bottom
 .service-list {
 	display: flex;
 	flex-wrap: wrap;
