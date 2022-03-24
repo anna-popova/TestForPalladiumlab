@@ -11,6 +11,10 @@ ul {
 a {
 	text-decoration: none;
 }
+a:hover {
+	cursor: pointer;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -47,6 +51,7 @@ body {
 	min-width: 1440px;
 }
 .page-header {
+	position: relative;
 	margin-bottom: 133px;
 }
 .page-header__wrapper {
@@ -58,6 +63,7 @@ body {
 	align-items: center;
 	min-height: 85px;
 	border-bottom: 1px solid #EBEBEB;
+	z-index: 999;
 }
 .page-header__logo {
 	position: absolute;
@@ -130,6 +136,8 @@ body {
 	text-align: center;
 }
 .page-header__title {
+	position: relative;
+	z-index: 999;
 	margin-bottom: 47px;
 	font-size: 62px;
 	line-height: 66px;
@@ -158,6 +166,9 @@ body {
 	height: 1px;
 	background-color: #222222;
 }
+.button:hover {
+	cursor: pointer;
+}
 .page-header__bottom {
 	min-height: 335px;
 	padding-top: 168px;
@@ -177,8 +188,10 @@ body {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .service-list__item {
+	position: relative;
 	flex-grow: 1;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 85px;
@@ -186,9 +199,45 @@ body {
 	border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 .service-list__link {
+	display: inline-block;
 	font-size: 20px;
 	line-height: 25px;
 	color: #fff;
+}
+.service-list__link--repair:hover .open-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.open-block {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 712px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	background-color: #EB5757;
+}
+.open-block__link {
+	font-size: 20px;
+	color: #fff;
+}
+.open-block__text {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-style: normal;
+	font-weight: 400;
+	color: #fff;
+}
+.open-block__img {
+	width: 40px;
+	height: 40px;
 }
 
 .page-main {
@@ -197,6 +246,8 @@ body {
 	margin-bottom: 133px;
 }
 .section-wrapper {
+	max-width: 1360px;
+	margin: 0 auto;
 	padding-left: 170px;
 	padding-right: 170px;
 }
@@ -277,4 +328,148 @@ body {
 .examples__button-block {
 	margin-top: 64px;
 	text-align: center;
+}
+
+.contacts {
+}
+.contacts__title {
+	margin-bottom: 50px;
+}
+.contacts__inner-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+
+}
+.contacts__list {
+}
+.contacts__item {
+	margin-bottom: 50px;
+}
+.contacts__item--adress {
+}
+.contacts__item-name {
+	margin-bottom: 10px;
+}
+.contacts__item-text {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+}
+.contacts__email,
+.contacts__phone {
+	color: #222222;
+}
+.contacts__item--email {
+}
+.contacts__social {
+}
+.social-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.social-item {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	background-color: #222222;
+	border-radius: 2px;
+}
+.social-item:last-child {
+	margin-right: 0;
+}
+.social-link {
+}
+.contacts__item--work-hours {
+}
+.contacts__item--phone {
+}
+.contacts__form-block {
+}
+.contacts__form {
+}
+.form {
+}
+.form__wrapper {
+	border-bottom: 1px solid #EBEBEB;
+	margin-bottom: 30px;
+}
+.form__wrapper--textarea {
+	position: relative;
+}
+.form__wrapper--textarea::after {
+	position: absolute;
+	top: 13px;
+	right: 0;
+	content: "";
+	display: block;
+	width: 18px;
+	height: 16px;
+	background: url("/svg/clip.svg") no-repeat center center;
+}
+.form__lable {
+	display: block;
+	margin-bottom: 5px;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: 500;
+}
+.form__input {
+	display: block;
+	margin-bottom: 7px;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	border: none;
+}
+.form__textarea {
+	position: relative;
+	display: block;
+	min-height: 24px;
+	margin-bottom: 7px;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	color: #909090;
+	border: none;
+	resize: none;
+}
+.form__agreement {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: 500;
+	color: #909090;
+}
+.form__agreement-link {
+	color: #222222;
+	border-bottom: 1px dashed #222222;
+}
+.form__button {
+	margin-top: 30px;
+}
+
+
+.page-footer {
+	margin-top: 135px;
+}
+.page-footer__inner-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	border-top: 1px solid #222222;
+}
+.bold-text {
+	font-weight: bold;
 }
