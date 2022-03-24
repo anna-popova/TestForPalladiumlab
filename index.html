@@ -43,7 +43,7 @@
 			<div class="page-header__middle">
 				<h1 id="title" class="page-header__title">Ремонт и дизайн<br> в Москве и Московской области</h1>
 				<h1 id="title-remove" class="page-header__title page-header__title-white page-header__title--hidden">Услуги по ремонту<br> в Москве и Московской области</h1>
-				<button class="page-header__button button" type="button">Оставить заявку</button>
+				<button id="header-button" class="page-header__button button" type="button">Оставить заявку</button>
 			</div>
 
 			<div id="page-header-bottom" class="page-header__bottom">
@@ -166,16 +166,16 @@
 		function changeItem() {
 			document.getElementById("page-header").classList.add("page-header--bkg");
 			document.getElementById("page-header-bottom").classList.add("page-header__bottom--remove-bkg");
-			// document.getElementById("").classList.add("");
 			document.getElementById("title").classList.add("page-header__title--hidden");
 			document.getElementById("title-remove").classList.remove("page-header__title--hidden");
+			document.getElementById("header-button").classList.add("page-header__button--white");
 			}
 			function rechangeItem() {
 			document.getElementById("page-header").classList.remove("page-header--bkg");
 			document.getElementById("page-header-bottom").classList.remove("page-header__bottom--remove-bkg");
-			// document.getElementById("").classList.remove("");
 			document.getElementById("title").classList.remove("page-header__title--hidden");
 			document.getElementById("title-remove").classList.add("page-header__title--hidden");
+			document.getElementById("header-button").classList.remove("page-header__button--white");
 			}
 	</script>
 </body>

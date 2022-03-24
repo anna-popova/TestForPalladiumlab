@@ -58,8 +58,6 @@ body {
 	background: url("img/repair-bkg.jpg") no-repeat center center;
 	background-size: cover;
 }
-.page-header__wrapper {
-}
 .page-header__top {
 	position: relative;
 	display: flex;
@@ -101,22 +99,14 @@ body {
 	margin-left: 6%;
 	margin-right: 6%;
 }
-.main-nav {
-}
-.main-nav__list {
-}
 .site-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0 auto;
 }
-.site-list__item {
-}
 .site-list__item:nth-child(6n + 3) {
 	margin-right: 30%;
-}
-.site-list__item--current {
 }
 .site-list__link {
 	color: #222222b2;
@@ -152,7 +142,8 @@ body {
 .page-header__title-white {
 	color: #fff;
 }
-.page-header__button {
+.page-header__button--white {
+	color: #fff;
 }
 .button {
 	position: relative;
@@ -254,8 +245,7 @@ body {
 	height: 40px;
 }
 
-.page-main {
-}
+
 .examples {
 	margin-bottom: 133px;
 }
@@ -281,8 +271,6 @@ body {
 }
 .examples__title {
 	margin-bottom: 50px;
-}
-.examples__gallery {
 }
 .gallery {
 	display: grid;
@@ -334,8 +322,6 @@ body {
 .gallery__item:nth-child(4)::before {
 	content: "Вторичка";
 }
-.gallery__link {
-}
 .gallery__img {
 	display: block;
 }
@@ -344,8 +330,7 @@ body {
 	text-align: center;
 }
 
-.contacts {
-}
+
 .contacts__title {
 	margin-bottom: 50px;
 }
@@ -355,12 +340,8 @@ body {
 	column-gap: 30px;
 
 }
-.contacts__list {
-}
 .contacts__item {
 	margin-bottom: 50px;
-}
-.contacts__item--adress {
 }
 .contacts__item-name {
 	margin-bottom: 10px;
@@ -375,10 +356,6 @@ body {
 .contacts__phone {
 	color: #222222;
 }
-.contacts__item--email {
-}
-.contacts__social {
-}
 .social-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -392,18 +369,6 @@ body {
 }
 .social-item:last-child {
 	margin-right: 0;
-}
-.social-link {
-}
-.contacts__item--work-hours {
-}
-.contacts__item--phone {
-}
-.contacts__form-block {
-}
-.contacts__form {
-}
-.form {
 }
 .form__wrapper {
 	border-bottom: 1px solid #EBEBEB;
