@@ -330,7 +330,9 @@ body {
 	text-align: center;
 }
 
-
+.contacts {
+	margin-top: 110px;
+}
 .contacts__title {
 	margin-bottom: 50px;
 }
@@ -451,4 +453,5 @@ body {
 }
 .bold-text {
 	font-weight: bold;
+	color: #222222;
 }
